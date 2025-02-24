@@ -5,11 +5,10 @@ As Laravel follows [Semantic Versioning](https://semver.org/) and it has it's ma
 Laravel's backward compatibility guidelines do not cover named arguments. This means the Laravel team may rename function arguments in future updates to improve the codebase. Therefore, when using named arguments in Laravel, you should be cautious and understand that parameter names may change in future versions.
 
 ###### Example:
-    Laravel may change function argument names in future releases.  
-    in Laravel 12, the `response()->json()` function may look like this:
-    
-
+Laravel may change function argument names in future releases.  
+In Laravel 12, the `response()->json()` function may look like this:
 ```php
-    public function json(array $data, int $status = 200)
+public function json(array $data, int $status = 200)
+
 
 

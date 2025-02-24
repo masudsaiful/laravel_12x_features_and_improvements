@@ -9,7 +9,9 @@ Laravel may change function argument names in future releases.
 In Laravel 12, the `response()->json()` function may look like this:
 ```php
 public function json(array $data, int $status = 200)
----
+
+___
+
 Laravel may change function argument names in future releases.  
 In Laravel 12, the `response()->json()` function may look like this:
 ```php

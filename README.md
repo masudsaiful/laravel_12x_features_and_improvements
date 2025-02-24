@@ -42,6 +42,7 @@ Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication 
 Many, including myself, may find it surprising that why has 'WorkOS AuthKit' been added in Laravel 12.x despite the presence of 'Socialite'? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
 
 **WorkOS AuthKit vs Laravel Socialite: Key Differences:**
+
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
 	What is WorkOS AuthKit?

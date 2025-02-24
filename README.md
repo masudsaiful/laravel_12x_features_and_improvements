@@ -36,5 +36,6 @@ Since `data:` and `status:` have been renamed, **Laravel will not recognize thes
 	Laravel will fix bugs untill August 13th, 2026
 	Laravel will provide security fixes untill February 24th, 2027
 
-
+#### C) WorkOS AuthKit:
+Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication which offers social authentication, passkeys, and SSO support to it's new releases starter kits for React, Vue, and Livewire
 

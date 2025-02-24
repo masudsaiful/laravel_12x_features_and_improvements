@@ -7,6 +7,7 @@ Laravel's backward compatibility guidelines do not cover named arguments. This m
 ###### Example:
     Laravel may change function argument names in future releases.  
     in Laravel 12, the `response()->json()` function may look like this:
+    
 
 ```php
     public function json(array $data, int $status = 200)

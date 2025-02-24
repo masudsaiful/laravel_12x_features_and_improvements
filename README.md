@@ -24,12 +24,14 @@ return response()->json(data: ['message' => 'Success'], status: 200);
 Since `data:` and `status:` have been renamed, **Laravel will not recognize these arguments** and will throw an **error**.
 
 #### B) Support Policies
-**11**
+**Version 11**
+
 	PHP support version (8.2 - 8.4)
 	Laravel will fix bugs untill September 3rd, 2025
 	Laravel will provide security fixes untill March 12th, 2026
 
-**12.x**
+**Version 12.x**
+
 	PHP support version (8.2 - 8.4)
 	Laravel will fix bugs untill August 13th, 2026
 	Laravel will provide security fixes untill February 24th, 2027

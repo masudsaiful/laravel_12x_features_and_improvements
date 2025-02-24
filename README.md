@@ -20,7 +20,7 @@ Now, the following code that worked in Laravel 12 will break in Laravel 13:
 ```php
 return response()->json(data: ['message' => 'Success'], status: 200);
 ```
-Since data: and status: have been renamed, Laravel will not recognize these arguments and will throw an error.
+Since `data:` and `status:` have been renamed, **Laravel will not recognize these arguments** and will throw an **error**.
 
 
 

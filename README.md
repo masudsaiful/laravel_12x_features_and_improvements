@@ -9,4 +9,5 @@ Laravel's backward compatibility guidelines do not cover named arguments. This m
     in Laravel 12, the `response()->json()` function may look like this:
     ```php
           public function json(array $data, int $status = 200)
+    ```
 

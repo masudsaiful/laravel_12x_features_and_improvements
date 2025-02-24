@@ -41,7 +41,7 @@ Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication 
 
 Many, including myself, may find it surprising that why has 'WorkOS AuthKit' been added in Laravel 12.x despite the presence of 'Socialite'? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
 
-**WorkOS AuthKit vs Laravel Socialite: Key Differences:**
+**i) WorkOS AuthKit vs Laravel Socialite: Key Differences:**
 
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
@@ -69,4 +69,7 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
     It’s developer-friendly but requires manual setup, including registering OAuth credentials, handling callbacks, and storing user data.
 
 
+**ii) When to Use Which?**
+    Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.  
+    Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.  
 

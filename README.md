@@ -45,7 +45,7 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
-	**WorkOS AuthKit**
+	###### WorkOS AuthKit
 	WorkOS AuthKit is a new authentication solution introduced in Laravel 12's starter kits (React, Vue, Livewire). It provides:
 	✔ Enterprise authentication out of the box.
 	✔ Social login (Google, Microsoft, etc.).
@@ -54,7 +54,7 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 
 	It’s integrated into Laravel’s starter kits, making it easier to implement authentication without additional setup.
 
-	**Socialite**
+	###### Socialite
 	Socialite is Laravel’s existing package for OAuth-based authentication. It allows authentication via:
 	✔ Google
 	✔ Facebook

@@ -9,13 +9,18 @@ Laravel may change function argument names in future releases.
 In Laravel 12, the `response()->json()` function may look like this:
 ```php
 public function json(array $data, int $status = 200)
-
 ```
 
-Laravel may change function argument names in future releases.  
-In Laravel 12, the `response()->json()` function may look like this:
+But in Laravel 13, it could be changed to:
 ```php
-public function json(array $data, int $status = 200)
+public function json(array $responseBody, int $httpStatusCode = 200)
+```
+
+Now, the following code that worked in Laravel 12 will break in Laravel 13:
+```php
+return response()->json(data: ['message' => 'Success'], status: 200);
+```
+Since data: and status: have been renamed, Laravel will not recognize these arguments and will throw an error.
 
 
 

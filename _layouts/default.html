@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta charset='utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="description" content="Laravel 12.x New Features, Immprovements">
-	  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Laravel 12.x New Features, Immprovements">
+	<meta name="keywords" content="Laravel, Laravel 12, Laravele 12.x, Laravel 12 Version"> 
+	<meta name="author" content="Masud, Saifulmasud, Saiful Masud, MD Saiful Islam Khan Masud">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+    	<!--[if lt IE 9]>
+    		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
 
-    {% seo %}
-    {% include head-custom.html %}
+    	{% seo %}
+    	{% include head-custom.html %}
 
-    <style>
-      	#main_content h2 {
+    	<style>
+      		#main_content h2 {
   		    font-size: 32px;
   		    color: #727272;
   		    margin-bottom: 20px;
   		    font-weight: 900;
-  		  }
+  		}
 
     		#main_content h3 {
     		    font-size: 28px;
@@ -90,7 +92,7 @@
     		}
 
     		h6#please-read-all-sections-consecutively-for-ease-of-understanding-one-section-is-inextricably-linked-with-another-section {
-    			  margin-bottom: 30px;
+    			margin-bottom: 30px;
     		}
 
     		/* Copy Code */
@@ -111,7 +113,7 @@
     		.copy-code-button:hover {
     		    background-color: #45a049;
     		}
-    </style>
+    	</style>
   </head>
 
   <body>
@@ -120,7 +122,7 @@
 
         <header>
             <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-            <!-- <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2> //-->
+            <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
         <section id="downloads" class="clearfix" style="margin-bottom: 0;">
 	      <p style="margin:0; padding: 0; font-size: 18px; color: #0097ff;">

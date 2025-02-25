@@ -3,6 +3,6 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 title: 'Laravel 12.x New Features and Improvements'
-description: Laravel 12.x brings several improvements and updates to enhance the framework's performance and usability. Here’s a quick look at the key features introduced in Laravel 12
+description: Laravel 12.x brings several improvements and updates to enhance the framework's performance and usability.
 
 

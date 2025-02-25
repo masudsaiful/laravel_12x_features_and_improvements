@@ -65,6 +65,16 @@
     		#main_content p {
     			font-size: 18px;
     		}
+
+		#main_content p.by_author {
+			margin: 0;
+			padding: 0;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			color: #0097ff;
+			border-bottom: 1px solid #ebebeb;
+		}
 		
     		code, pre {
     			font-size: 16px;
@@ -126,7 +136,7 @@
         </header>
 		
         <section id="downloads" class="clearfix" style="margin-bottom: 0;">
-		<p style="margin:0; padding: 0; font-size: 18px; color: #0097ff;">
+		<p class="by-author" style="margin:0; padding: 0; font-size: 18px; color: #0097ff;">
     			By Saifulmasud <br />
     	  	  	10 May 2024  
 	      	</p>
@@ -139,6 +149,7 @@
 	                <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
 	                <a href="{{ site.github.tar_url }}" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
             	{% endif %}
+		
   	        {% if site.github.public %}
 	      	        {% if site.github.is_project_page %}
 	                    <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>

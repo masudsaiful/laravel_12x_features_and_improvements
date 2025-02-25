@@ -25,11 +25,11 @@ Since `data:` and `status:` have been renamed, **Laravel will not recognize thes
 #### B) Support Policies
 **Version 11**
 
-*** promo
+<iframe>
 PHP support version (8.2 - 8.4)  
 Laravel will fix bugs untill September 3rd, 2025  
 Laravel will provide security fixes untill March 12th, 2026  
-***
+</iframe>
 
 **Version 12.x**
 

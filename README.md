@@ -37,7 +37,7 @@ Since `data:` and `status:` have been renamed, **Laravel will not recognize thes
 
 
 #### C) WorkOS AuthKit:
-Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication which offers social authentication, passkeys, and SSO support to it's new releases starter kits for React, Vue, and Livewire. **WorkOS offers free authentication** 
+Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication which offers social authentication, passkeys, and SSO support to it's new releases starter kits for React, Vue, and Livewire. **WorkOS offers free authentication**. 
 
 Many, including myself, may find it surprising that why has **'WorkOS AuthKit'** been added in Laravel 12.x despite the presence of **'Socialite'**? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
 
@@ -112,7 +112,7 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
 #### F) Laravel Breeze and Laravel Jetstream will no longer receive additional updates:  
 With the introduction of Laravel's new application starter kits, **Laravel Breeze** and **Laravel Jetstream** will no longer receive additional updates.   
 
-#### F) Upgrading from 11.x:  
+#### G) Upgrading from 11.x:  
 When upgrading to a new version, it's crucial to consider potential breaking changes that may impact the application. Laravel strives to document all such changes, though only a few may directly affect applications, as some modifications occur in less commonly used parts of the framework. Additionally, Laravel categorizes these changes based on their impact—high, medium, or low. Let’s explore these changes based on Laravel's recommendations for a smooth transition.   
 
 **i) Significant Changes:**
@@ -120,7 +120,7 @@ When upgrading to a new version, it's crucial to consider potential breaking cha
 The following are the high impact changes that need while upgrading from version 11.x:
 
 > **Updating Dependencies:**
-> We should update the following dependencies in the application's composer.json file while upgrading from version **11.x**:      
+> We should update the following dependencies in the application's composer.json file while upgrading from version 11.x:      
 > * laravel/framework to ^12.0.    
 > * phpunit/phpunit to ^11.0.    
 > * pestphp/pest to ^3.0.

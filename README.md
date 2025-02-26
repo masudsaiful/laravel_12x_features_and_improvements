@@ -72,5 +72,15 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 > **Laravel Socialite**        
 > Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.         
 
-Laravel **Socialite** is great for basic social logins, while **WorkOS AuthKit** is a more advanced authentication solution with enterprise features. Laravel 12 does not replace Socialite but provides WorkOS AuthKit as an alternative for applications needing SSO, passkeys, or enterprise authentication. 
+Laravel **Socialite** is great for basic social logins, while **WorkOS AuthKit** is a more advanced authentication solution with enterprise features. Laravel 12 does not replace Socialite but provides WorkOS AuthKit as an alternative for applications needing SSO, passkeys, or enterprise authentication.  
+
+
+#### D) Minimal Breaking Changes:
+According their doc Laravel mainly focuses during the release cycle are:
+
+> ✔ Minimizing breaking changes.  
+> ✔ Do not break existing applications.  
+> ✔ Minor "maintenance release" in order to upgrade existing dependencies.  
+> ✔ May upgrade to Laravel 12 without changing any application code.  
+
 

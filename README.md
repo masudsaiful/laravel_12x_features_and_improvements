@@ -106,8 +106,8 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**
 
   **There are nice official doc of Laravel 12 new application starter kits:**  
-  [New Application Starter Kits Official Docs](https://laravel.com/docs/12.x/starter-kits)      
-  [Examples, Live Preview, Features, Deployment, Laravel Cloud and More](https://laravel.com/starter-kits)    
+  * [New Application Starter Kits Official Docs](https://laravel.com/docs/12.x/starter-kits)      
+  * [Examples, Live Preview, Features, Deployment, Laravel Cloud and More](https://laravel.com/starter-kits)    
 
 #### F) Laravel Breeze and Laravel Jetstream will no longer receive additional updates:  
 With the introduction of Laravel's new application starter kits, **Laravel Breeze** and **Laravel Jetstream** will no longer receive additional updates.      

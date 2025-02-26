@@ -89,7 +89,7 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
  
 **Starter Kit for React**
 
-> 🔹 The React starter kit utilize **Inertia 2**, **TypeScript**, **shadcn/ui**, and **Tailwind**    
+> 🔹 The React starter kit utilize **Inertia 2**, **TypeScript**, [**shadcn/ui**](https://ui.shadcn.com/), and **Tailwind**    
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more    
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**  
 

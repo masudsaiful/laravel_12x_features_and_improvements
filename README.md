@@ -120,10 +120,10 @@ When upgrading to a new version, it's crucial to consider potential breaking cha
 The following are the high impact changes that need while upgrading from version 11.x:
 
 > **Updating Dependencies:**    
-> We should update the following dependencies in out application's composer.json file while upgrading from version 11.x:      
-> ✔ laravel/framework to ^12.0.    
-> ✔ phpunit/phpunit to ^11.0.    
-> ✔ pestphp/pest to ^3.0.    
+> We should update the following dependencies in the application's composer.json file while upgrading from version **11.x**:      
+> * laravel/framework to ^12.0.    
+> * phpunit/phpunit to ^11.0.    
+> * pestphp/pest to ^3.0.    
 
 
 

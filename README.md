@@ -51,7 +51,8 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 > ✔ Enterprise authentication out of the box.    
 > ✔ Social login (Google, Microsoft, etc.).    
 > ✔ Passkeys (passwordless authentication).    
-> ✔ Single Sign-On (SSO) for corporate users.    
+> ✔ Single Sign-On (SSO) for corporate users.
+>     
 > It’s integrated into Laravel’s starter kits, making it easier to implement authentication without additional setup.  
 
     

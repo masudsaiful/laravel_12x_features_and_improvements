@@ -39,7 +39,7 @@ Since `data:` and `status:` have been renamed, **Laravel will not recognize thes
 #### C) WorkOS AuthKit:
 Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication which offers social authentication, passkeys, and SSO support to it's new releases starter kits for React, Vue, and Livewire. 
 
-Many, including myself, may find it surprising that why has 'WorkOS AuthKit' been added in Laravel 12.x despite the presence of 'Socialite'? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
+Many, including myself, may find it surprising that why has **'WorkOS AuthKit'** been added in Laravel 12.x despite the presence of **'Socialite'**? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
 
 **i) WorkOS AuthKit vs Laravel Socialite: Key Differences:**
 

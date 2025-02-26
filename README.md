@@ -65,12 +65,12 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 > It’s developer-friendly but requires manual setup, including registering OAuth credentials, handling callbacks, and storing user data.  
 
 
-**ii) When to Use Which?**
-> WorkOS AuthKit    
-> Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.        
+**ii) When to Use Which?**  
+> **WorkOS AuthKit**          
+> Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.            
 
-> Socialite  
-> Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.     
+> **Laravel Socialite**        
+> Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.         
 
 Laravel **Socialite** is great for basic social logins, while **WorkOS AuthKit** is a more advanced authentication solution with enterprise features. Laravel 12 does not replace Socialite but provides WorkOS AuthKit as an alternative for applications needing SSO, passkeys, or enterprise authentication. 
 

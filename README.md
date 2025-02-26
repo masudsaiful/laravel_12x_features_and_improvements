@@ -99,6 +99,13 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**    
 
+**Starter Kit for Livewire**
+
+> 🔹 Livewire starter kits utilizes the Tailwind based [Flux UI](https://fluxui.dev/) component library and Laravel [Volt](https://github.com/livewire/volt)  
+> 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
+> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**
+
+**There are nice official doc of Laravel 12 new application starter kits**
 [New Application Starter Kits Official Docs](https://laravel.com/docs/12.x/starter-kits)    
 [Examples, Live Preview, Features, Deployment, Laravel Cloud and More](https://laravel.com/starter-kits)  
 

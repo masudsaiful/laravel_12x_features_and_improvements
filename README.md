@@ -24,16 +24,17 @@ Since `data:` and `status:` have been renamed, **Laravel will not recognize thes
 
 #### B) Support Policies
 
-> **Version 11**   
-> PHP support version (8.2 - 8.4)    
-> Laravel will fix bugs untill September 3rd, 2025    
-> Laravel will provide security fixes untill March 12th, 2026    
+> **Version 11**     
+> PHP support version (8.2 - 8.4)      
+> Laravel will fix bugs untill September 3rd, 2025      
+> Laravel will provide security fixes untill March 12th, 2026      
 
-**Version 12.x**
 
-PHP support version (8.2 - 8.4) 
-Laravel will fix bugs untill August 13th, 2026 
-Laravel will provide security fixes untill February 24th, 2027 
+> **Version 12.x**      
+> PHP support version (8.2 - 8.4)     
+> Laravel will fix bugs untill August 13th, 2026     
+> Laravel will provide security fixes untill February 24th, 2027   
+
 
 #### C) WorkOS AuthKit:
 Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication which offers social authentication, passkeys, and SSO support to it's new releases starter kits for React, Vue, and Livewire. 

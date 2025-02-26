@@ -37,7 +37,7 @@ Since `data:` and `status:` have been renamed, **Laravel will not recognize thes
 
 
 #### C) WorkOS AuthKit:
-Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication which offers social authentication, passkeys, and SSO support to it's new releases starter kits for React, Vue, and Livewire. 
+Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication which offers social authentication, passkeys, and SSO support to it's new releases starter kits for React, Vue, and Livewire. **WorkOS offers free authentication** 
 
 Many, including myself, may find it surprising that why has **'WorkOS AuthKit'** been added in Laravel 12.x despite the presence of **'Socialite'**? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
 
@@ -91,19 +91,19 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
 
 > 🔹 The React starter kit utilize [Inertia 2](https://inertiajs.com/), TypeScript, [shadcn/ui](https://ui.shadcn.com/), and Tailwind    
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more    
-> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**  
+> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support.
 
 **Starter Kit for Vue**
 
 > 🔹 The Vue starter kit utilize [Inertia 2](https://inertiajs.com/), TypeScript, [shadcn/ui](https://ui.shadcn.com/), and Tailwind  
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
-> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**    
+> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support.
 
 **Starter Kit for Livewire**
 
 > 🔹 Livewire starter kits utilizes the Tailwind based [Flux UI](https://fluxui.dev/) component library and Laravel [Volt](https://github.com/livewire/volt)  
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
-> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**
+> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support.
 
 **There are nice official doc of Laravel 12 new application starter kits:**    
 * [New Application Starter Kits Official Docs](https://laravel.com/docs/12.x/starter-kits)      

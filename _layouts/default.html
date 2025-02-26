@@ -21,7 +21,7 @@
 		    padding: 0;
 		    color: #717171;
 		    border: none;
-		    font-size: 14px;
+		    font-size: 15px;
 		    padding: 5px;
 		    border-radius: 5px;
 		}
@@ -29,7 +29,7 @@
 		blockquote {
 		    padding: 0 0 0 30px;
 		    margin-bottom: 20px;
-		    font-size: 14px;
+		    font-size: 15px;
 		    padding: 10px;
 		    border: 0;
 		    background: #ebebeb;
@@ -37,7 +37,7 @@
 		}
 
 		blockquote p {
-		    font-size: 14px;
+		    font-size: 15px;
 		    margin: 0;
 		    padding: 0;
 		}
@@ -53,9 +53,14 @@
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 			margin-top: 0;
-			font-size: 16px;
+			font-size: 18px;
 			color: #0097ff;
 			border-bottom: 1px solid #ebebeb;
+		}
+
+		#downloads p.description {
+			margin-bottom: 10px;
+			font-size: 15px;
 		}
 		
       		#main_content h2 {
@@ -90,7 +95,7 @@
     		#main_content h6 {
     			font-weight: bold;
     			margin-bottom: 10px;
-    			font-size: 16px;
+    			font-size: 18px;
     			color: #555555cc;
     		}
 		
@@ -103,7 +108,7 @@
     		}
 
     		#main_content p {
-    			font-size: 14px;
+    			font-size: 15px;
     		}
 
     		.highlight .c, 
@@ -115,7 +120,7 @@
     		}
 
     		.utterances iframe h1.timeline-header {
-    			  font-size: 16px!important;
+    			  font-size: 18px!important;
     		}
 
     		.utterances iframe h1.timeline-header em {
@@ -139,7 +144,7 @@
       			padding: 5px 10px;
       			text-align: center;
       			text-decoration: none;
-      			font-size: 14px;
+      			font-size: 15px;
       			margin: 4px 2px;
       			cursor: pointer;
       			border-radius: 4px;
@@ -167,7 +172,7 @@
     	  	  	10 May 2024  
 	      	</p>
 
-		<p style="margin-bottom: 10px, font-size: 15px">
+		<p class="description">
 			{{ page.description | default: site.description | default: site.github.project_tagline }}
 		</p>
 		

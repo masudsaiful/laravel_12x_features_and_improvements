@@ -46,7 +46,7 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
 
-> **WorkOS AuthKit:**    
+> **WorkOS AuthKit:**
 > WorkOS AuthKit is a new authentication solution introduced in Laravel 12's starter kits (React, Vue, Livewire). It provides:      
 > ✔ Enterprise authentication out of the box.    
 > ✔ Social login (Google, Microsoft, etc.).    
@@ -66,10 +66,10 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 
 
 **ii) When to Use Which?**  
-> **WorkOS AuthKit:**     
+> **WorkOS AuthKit:**
 > Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.            
 
-> **Laravel Socialite:**     
+> **Laravel Socialite:**
 > Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.         
 
 Laravel **Socialite** is great for basic social logins, while **WorkOS AuthKit** is a more advanced authentication solution with enterprise features. Laravel 12 does not replace Socialite but provides WorkOS AuthKit as an alternative for applications needing SSO, passkeys, or enterprise authentication.  
@@ -119,14 +119,14 @@ When upgrading to a new version, it's crucial to consider potential breaking cha
 
 The following are the high impact changes that need while upgrading from version 11.x:
 
-> **Updating Dependencies:** 
+> **Updating Dependencies:**
 > We should update the following dependencies in the application's composer.json file while upgrading from version **11.x**:      
 > * laravel/framework to ^12.0.    
 > * phpunit/phpunit to ^11.0.    
 > * pestphp/pest to ^3.0.
 
 > **Updating Installer While Using CLI Tool:**
-> If we want to create new Laravel application using Laravel installer CLI tool we should update the installer installation to be compatible with Laravel 12.x and the new Laravel starter kits while upgrading from version **11.x**:      
+> If we want to create new Laravel application using Laravel installer CLI tool we should update the installer installation to be compatible with Laravel 12.x and the new Laravel starter kits while upgrading from version 11.x:      
 > * updated installer via composer : composer global update laravel/installer    
 > * updated installer via php.new (run as administrator) : Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))   
 > * updated installer using [Laravel Herd's](https://herd.laravel.com/) : update Herd installation to the latest release.  

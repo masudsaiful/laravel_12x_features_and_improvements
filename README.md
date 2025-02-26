@@ -129,7 +129,12 @@ The following are the high impact changes that need while upgrading from version
 > If we want to create new Laravel application using Laravel installer CLI tool we should update the installer installation to be compatible with Laravel 12.x and the new Laravel starter kits while upgrading from version 11.x:      
 > * updated installer via composer > `composer global update laravel/installer`    
 > * updated installer via php.new (run as administrator) > `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))`   
-> * updated installer using [Laravel Herd's](https://herd.laravel.com/) > update Herd installation to the latest release.  
+> * updated installer using [Laravel Herd's](https://herd.laravel.com/) > update Herd installation to the latest release.
+
+
+**i) Medium Impact Changes:**
+
+This affects applications that rely on UUIDs for model IDs. If system depends on UUIDv4 and want to use UUIDv7, must update the application code relates with UUIDv7.
 
 
 

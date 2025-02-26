@@ -125,7 +125,7 @@ The following are the high impact changes that need while upgrading from version
 > * phpunit/phpunit to ^11.0.    
 > * pestphp/pest to ^3.0.
 
-> **Updating Installer While Using CLI Tool:**    
+> **Updating Installer While Using CLI Tool:**
 > If we want to create new Laravel application using Laravel installer CLI tool we should update the installer installation to be compatible with Laravel 12.x and the new Laravel starter kits while upgrading from version **11.x**:      
 > * updated installer via composer : composer global update laravel/installer    
 > * updated installer via php.new (run as administrator) : Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))   

@@ -46,7 +46,7 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
 
-> **WorkOS AuthKit**    
+> **WorkOS AuthKit:**    
 > WorkOS AuthKit is a new authentication solution introduced in Laravel 12's starter kits (React, Vue, Livewire). It provides:      
 > ✔ Enterprise authentication out of the box.    
 > ✔ Social login (Google, Microsoft, etc.).    
@@ -55,7 +55,7 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 > It’s integrated into Laravel’s starter kits, making it easier to implement authentication without additional setup.  
 
     
-> **Laravel Socialite**  
+> **Laravel Socialite:**  
 > Socialite is Laravel’s existing package for OAuth-based authentication. It allows authentication via:  
 > ✔ Google  
 > ✔ Facebook  
@@ -66,10 +66,10 @@ Many, including myself, may find it surprising that why has 'WorkOS AuthKit' bee
 
 
 **ii) When to Use Which?**  
-> **WorkOS AuthKit**          
+> **WorkOS AuthKit:**          
 > Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.            
 
-> **Laravel Socialite**        
+> **Laravel Socialite:**        
 > Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.         
 
 Laravel **Socialite** is great for basic social logins, while **WorkOS AuthKit** is a more advanced authentication solution with enterprise features. Laravel 12 does not replace Socialite but provides WorkOS AuthKit as an alternative for applications needing SSO, passkeys, or enterprise authentication.  
@@ -89,15 +89,15 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
  
 **Starter Kit for React**
 
-> The React starter kit utilize **Inertia 2**, **TypeScript**, **shadcn/ui**, and **Tailwind**    
-> It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more    
-> introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**  
+> 🔹 The React starter kit utilize **Inertia 2**, **TypeScript**, **shadcn/ui**, and **Tailwind**    
+> 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more    
+> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**  
 
 **Starter Kit for Vue**
 
-> The Vue starter kit utilize **Inertia 2**, **TypeScript**, **shadcn/ui**, and **Tailwind**  
-> It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
-> introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**    
+> 🔹 The Vue starter kit utilize **Inertia 2**, **TypeScript**, **shadcn/ui**, and **Tailwind**  
+> 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
+> 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**    
 
 [New Application Starter Kits Official Docs](https://laravel.com/docs/12.x/starter-kits)    
 [Examples, Live Preview, Features, Deployment, Laravel Cloud and More](https://laravel.com/starter-kits)  

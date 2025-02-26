@@ -110,7 +110,7 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
 [Examples, Live Preview, Features, Deployment, Laravel Cloud and More](https://laravel.com/starter-kits)    
 
 #### F) Laravel Breeze and Laravel Jetstream will no longer receive additional updates:  
-With the introduction of Laravel's new application starter kits, Laravel Breeze and Laravel Jetstream will no longer receive additional updates.      
+With the introduction of Laravel's new application starter kits, **Laravel Breeze** and **Laravel Jetstream** will no longer receive additional updates.      
 
 
 

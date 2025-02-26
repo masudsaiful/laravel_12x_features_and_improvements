@@ -132,7 +132,7 @@ The following are the high impact changes that need while upgrading from version
 > * updated installer using [Laravel Herd's](https://herd.laravel.com/) > update Herd installation to the latest release.
 
 
-**i) Medium Impact Changes:**
+**ii) Medium Impact Changes:**
 
 This affects applications that rely on UUIDs for model IDs. If system depends on UUIDv4 and want to use UUIDv7, must update the application code relates with UUIDv7.
 

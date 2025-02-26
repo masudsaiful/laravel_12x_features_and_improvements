@@ -24,13 +24,13 @@ Since `data:` and `status:` have been renamed, **Laravel will not recognize thes
 
 #### B) Support Policies
 
-> **Version 11**     
+> **Version 11**
 > PHP support version (8.2 - 8.4)      
 > Laravel will fix bugs untill September 3rd, 2025      
 > Laravel will provide security fixes untill March 12th, 2026      
 
 
-> **Version 12.x**      
+> **Version 12.x**
 > PHP support version (8.2 - 8.4)     
 > Laravel will fix bugs untill August 13th, 2026     
 > Laravel will provide security fixes untill February 24th, 2027   
@@ -55,7 +55,7 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 > It’s integrated into Laravel’s starter kits, making it easier to implement authentication without additional setup.  
 
     
-> **Laravel Socialite:**  
+> **Laravel Socialite:**
 > Socialite is Laravel’s existing package for OAuth-based authentication. It allows authentication via:  
 > ✔ Google  
 > ✔ Facebook  
@@ -66,10 +66,10 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 
 
 **ii) When to Use Which?**  
-> **WorkOS AuthKit:**          
+> **WorkOS AuthKit:**     
 > Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.            
 
-> **Laravel Socialite:**        
+> **Laravel Socialite:**     
 > Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.         
 
 Laravel **Socialite** is great for basic social logins, while **WorkOS AuthKit** is a more advanced authentication solution with enterprise features. Laravel 12 does not replace Socialite but provides WorkOS AuthKit as an alternative for applications needing SSO, passkeys, or enterprise authentication.  
@@ -89,13 +89,13 @@ Laravel 12 introduces new application starter kits for React, Vue, and Livewire.
  
 **Starter Kit for React**
 
-> 🔹 The React starter kit utilize **Inertia 2**, **TypeScript**, [**shadcn/ui**](https://ui.shadcn.com/), and **Tailwind**    
+> 🔹 The React starter kit utilize [Inertia 2](https://inertiajs.com/), TypeScript, [shadcn/ui](https://ui.shadcn.com/), and Tailwind    
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more    
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**  
 
 **Starter Kit for Vue**
 
-> 🔹 The Vue starter kit utilize **Inertia 2**, **TypeScript**, **shadcn/ui**, and **Tailwind**  
+> 🔹 The Vue starter kit utilize [Inertia 2](https://inertiajs.com/), TypeScript, [shadcn/ui](https://ui.shadcn.com/), and Tailwind  
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support. **WorkOS offers free authentication**    
 
@@ -119,7 +119,7 @@ When upgrading to a new version, it's crucial to consider potential breaking cha
 
 The following are the high impact changes that need while upgrading from version 11.x:
 
-> **Updating Dependencies:**    
+> **Updating Dependencies:** 
 > We should update the following dependencies in the application's composer.json file while upgrading from version **11.x**:      
 > * laravel/framework to ^12.0.    
 > * phpunit/phpunit to ^11.0.    

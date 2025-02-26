@@ -2,7 +2,7 @@ remote_theme: pages-themes/tactile@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-title: 'Laravel 12.x New Features and Improvements'
+title: 'Laravel 12.x New Features, Improvements and how to upgrade from 11.x'
 description: Laravel 12.x brings several improvements and updates to enhance the framework's performance and usability.
 
 

@@ -241,6 +241,25 @@ Previously, in **Laravel 11** and earlier, calling `$request->mergeIfMissing()` 
     ]);
 ```
 
+**Example: Laravel 12 (New Behavior):**
+Now, Laravel 12 correctly merges dot notation keys into a nested array.
+
+```php
+    $request->mergeIfMissing([
+        'user.last_name' => 'Otwell',
+    ]);
+```
+
+**Expected Output in Laravel 12:**
+`[
+    'user' => [
+        'last_name' => 'Otwell',
+    ]
+]`
+
+✔ Now, Laravel automatically converts dot notation into a nested array.  
+✔ No need to manually structure the array.  
+
 
 
 

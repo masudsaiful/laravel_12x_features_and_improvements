@@ -298,7 +298,7 @@ Fetch tables from the main schema only
 ```php
     $tables = Schema::getTables(schema: 'main');
 ```
-Output: `['main.migrations', 'main.users', 'blog.posts']`
+Output: `['main.migrations', 'main.users']`
 
 
 **Example 2: Fetching Tables from Multiple Schemas:**  

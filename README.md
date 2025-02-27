@@ -310,10 +310,13 @@ Output: `['main.migrations', 'main.users']`
 Output: `['main.migrations', 'main.users', 'blog.posts']`<br /><br />
 
 
-**Example 3: Schema::getTableListing() Now Returns Schema-Qualified Table Names:**  
-**Fetch tables** from **main** and **blog** schemas.    
+**Example 3: Schema::getTableListing() Now Returns Schema-Qualified Table Names:**    
+> * Old behavior (Laravel 11) → Only returned table names, without schema prefixes..    
+> * New behavior (Laravel 12) → Returns schema-qualified table names..    
 
+Laravel 12 Default Behavior
 ```php
-    $tables = Schema::getTables(schema: ['main', 'blog']);
+    Schema::getTableListing();
 ```
-Output: `['main.migrations', 'main.users', 'blog.posts']`
+Output: `['main.migrations', 'main.users', 'blog.posts']`  
+Now includes schema names (main, blog).

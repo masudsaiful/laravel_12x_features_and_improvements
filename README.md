@@ -228,11 +228,11 @@ Previously, in **Laravel 11** and earlier, calling `$request->mergeIfMissing()` 
 ```
 
 **Expected Output in Laravel 11:**
-```php
+`
     [
         'user.last_name' => 'Otwell', // Stored as a string key, not nested.
     ]
-```
+`
 
 
 

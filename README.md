@@ -41,7 +41,7 @@ Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication 
 
 Many, including myself, may find it surprising that why has **'WorkOS AuthKit'** been added in Laravel 12.x despite the presence of **'Socialite'**? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
 
-##### i) WorkOS AuthKit vs Laravel Socialite: Key Differences:
+###### i) WorkOS AuthKit vs Laravel Socialite: Key Differences:
 
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
@@ -65,7 +65,7 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 > It’s developer-friendly but requires manual setup, including registering OAuth credentials, handling callbacks, and storing user data.  
 
 
-##### ii) When to Use Which? 
+###### ii) When to Use Which? 
 > **WorkOS AuthKit:**
 > Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.            
 
@@ -87,25 +87,25 @@ According their doc Laravel mainly focuses during the release cycle are:
 #### E) Laravel 12 introduces new application starter kits:
 Laravel 12 introduces new application starter kits for React, Vue, and Livewire. Let's see what are they: 
  
-**Starter Kit for React**
+###### Starter Kit for React
 
 > 🔹 The React starter kit utilize [Inertia 2](https://inertiajs.com/), TypeScript, [shadcn/ui](https://ui.shadcn.com/), and Tailwind    
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more    
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support.
 
-**Starter Kit for Vue**
+###### Starter Kit for Vue
 
 > 🔹 The Vue starter kit utilize [Inertia 2](https://inertiajs.com/), TypeScript, [shadcn/ui](https://ui.shadcn.com/), and Tailwind  
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support.
 
-**Starter Kit for Livewire**
+###### Starter Kit for Livewire
 
 > 🔹 Livewire starter kits utilizes the Tailwind based [Flux UI](https://fluxui.dev/) component library and Laravel [Volt](https://github.com/livewire/volt)  
 > 🔹 It's Utilize Laravel's built-in authentication system to offer login, registration, password reset, email verification, and more  
 > 🔹 introducing a [WorkOS AuthKit](https://authkit.com/) powered variant offering social authentication, passkeys, and SSO support.
 
-**There are nice official doc of Laravel 12 new application starter kits:**    
+###### There are nice official doc of Laravel 12 new application starter kits:     
 * [New Application Starter Kits Official Docs](https://laravel.com/docs/12.x/starter-kits)      
 * [Examples, Live Preview, Features, Deployment, Laravel Cloud and More](https://laravel.com/starter-kits)    
 
@@ -115,7 +115,7 @@ With the introduction of Laravel's new application starter kits, **Laravel Breez
 #### G) Upgrading from 11.x:  
 When upgrading to a new version, it's crucial to consider potential breaking changes that may impact the application. Laravel strives to document all such changes, though only a few may directly affect applications, as some modifications occur in less commonly used parts of the framework. Additionally, Laravel categorizes these changes based on their impact—high, medium, or low. Let’s explore these changes based on Laravel's recommendations for a smooth transition.   
 
-**i) Significant Changes:**
+###### i) Significant Changes:
 
 The following are the high impact changes that need while upgrading from version 11.x:
 
@@ -132,7 +132,7 @@ The following are the high impact changes that need while upgrading from version
 > * updated installer using [Laravel Herd's](https://herd.laravel.com/) > update Herd installation to the latest release.
 
 
-**ii) Medium Impact Changes:**
+###### ii) Medium Impact Changes:  
 
 Laravel says, **Likelihood Of Impact: Medium** about **Models and UUIDv7**. Before that let's firstly try to undestand what is this actually!
 

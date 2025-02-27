@@ -196,7 +196,10 @@ The following are the minimal impact changes that need while upgrading from vers
 > If you see Carbon 2.x, you'll need to upgrade.<br /><br />
 > **2. Upgrade to Carbon 3.x :** Run the following command:      
 > `composer require nesbot/carbon:^3.0 --with-all-dependencies`           
-> This updates Carbon to version 3.x 
+> This updates Carbon to version 3.x<br /><br />
+> **3. Verify the Update :** Check again with:      
+> `composer show nesbot/carbon`           
+> You should see something like this: versions: `*3.x.x*`<br /><br />
 
 
 > **Updating Installer While Using CLI Tool:**

@@ -136,11 +136,23 @@ The following are the high impact changes that need while upgrading from version
 
 Laravel says, **Likelihood Of Impact: Medium** about **Models and UUIDv7**. Before that let's firstly try to undestand what is this actually!
 
-A **UUID** (Universally Unique Identifier) is a 128-bit identifier used to uniquely identify records in a database. Unlike auto-incrementing IDs, UUIDs:
+Laravel supports multiple **UUID** versions, primarily, **UUIDv4** and **UUIDv7**. A **UUID** (Universally Unique Identifier) is a 128-bit identifier used to uniquely identify records in a database. **UUIDv7** was introduced to improve performance and ordering in databases by using timestamp-based sorting. Unlike auto-incrementing IDs, **UUIDs:**
 
 🔹 Are globally unique (no duplicates even across different databases).  
 🔹 Do not expose record count (for security).  
 🔹 Work well in distributed systems (no risk of ID conflicts).  
+🔹 **UUIDv4** → Fully random values. 
+🔹 **UUIDv7** → Ordered, time-based values (better for database indexing).
+
+###### Laravel 12.x Upgrade: What Changed with UUIDs?
+**Before Laravel 12.x (Laravel 11.x and Earlier)**  
+**HasUuids** → Used **UUIDv4** (random UUIDs).
+**HasVersion7Uuids** → Used **UUIDv7** (ordered UUIDs).
+
+**In Laravel 12.x**  
+**HasUuids** → Now defaults to **UUIDv7** instead of UUIDv4.
+**HasVersion7Uuids** → Removed (not needed anymore).
+New **HasVersion4Uuids** trait → If you still want **UUIDv4**, use this instead.
 
 
 

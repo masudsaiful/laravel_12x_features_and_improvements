@@ -183,7 +183,23 @@ Laravel supports multiple **UUID** versions, primarily, **UUIDv4** and **UUIDv7*
     }
 ```
 
+###### iii) Minimal Impact Changes:
 
+The following are the minimal impact changes that need while upgrading from version 11.x:
+
+**Updating Dependencies**
+
+> **Carbon 3**  
+> All Laravel 12 applications now require Carbon 3.x. Upgrading to **Carbon 3.x** in **Laravel 12** is straightforward. **Laravel 12** requires **Carbon 3.x** by default, so if you're using **Laravel 12**, it should already be installed. However, if you need to upgrade from **Carbon 2.x**, follow these steps.:        
+> 1. Check Your Current Carbon Version : Run the following command in your Laravel project to see the installed version:      
+> * `composer show nesbot/carbon`       
+> If you see **Carbon 2.x**, you'll need to upgrade..
+
+> **Updating Installer While Using CLI Tool:**
+> If we want to create new Laravel application using Laravel installer CLI tool we should update the installer installation to be compatible with Laravel 12.x and the new Laravel starter kits while upgrading from version 11.x:      
+> * updated installer via composer > `composer global update laravel/installer`    
+> * updated installer via php.new (run as administrator) > `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))`   
+> * updated installer using [Laravel Herd's](https://herd.laravel.com/) > update Herd installation to the latest release.
 
 
 

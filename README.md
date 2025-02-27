@@ -193,7 +193,7 @@ The following are the minimal impact changes that need while upgrading from vers
 > All **Laravel 12** applications now require **Carbon 3.x**. Upgrading to **Carbon 3.x** in **Laravel 12** is straightforward. **Laravel 12** requires **Carbon 3.x** by default, so if you're using **Laravel 12**, it should already be installed. However, if you need to upgrade from **Carbon 2.x**, follow these steps.:<br /><br /> 
 > **1. Check Your Current Carbon Version :** Run the following command in your Laravel project to see the installed version:   
 > `composer show nesbot/carbon`         
-> If you see Carbon 2.x, you'll need to upgrade.<br /><br />  
+> If you see Carbon 2.x, you'll need to upgrade.<br /> 
 > **2. Upgrade to Carbon 3.x :** Run the following command:      
 > `composer require nesbot/carbon:^3.0 --with-all-dependencies`           
 > This updates Carbon to version 3.x 

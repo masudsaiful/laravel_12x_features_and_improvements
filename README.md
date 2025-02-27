@@ -257,9 +257,17 @@ Now, Laravel 12 correctly merges dot notation keys into a nested array.
     ]
 ]`
 
-✔ Now, Laravel automatically converts dot notation into a nested array.  
-✔ No need to manually structure the array.  
+***(D) Multi-Schema Support in Database Schema Inspection***     
+In Laravel 12, database schema inspection methods (Schema::getTables(), Schema::getViews(), Schema::getTypes(), and Schema::getTableListing()) now return results from all database schemas by default, instead of only showing tables from the default schema.
 
+> **Laravel 11 & Earlier (Old Behavior):**     
+> * `Schema::getTables()` & similar methods only fetched tables from the default schema.    
+> * If a database had multiple schemas (like in `PostgreSQL, MySQL, MariaDB`, and `SQL Server`), Laravel only returned tables from the default schema.    
+> * Developers had to use custom queries to inspect tables in other schemas.
 
-
+**Example in Laravel 11:**
+```php
+    $tables = Schema::getTables(); // Only returns tables from the default schema.
+```
+  
 

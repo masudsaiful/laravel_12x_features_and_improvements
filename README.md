@@ -257,7 +257,7 @@ Now, Laravel 12 correctly merges dot notation keys into a nested array.
     ]
 ]`
 
-***(D) Multi-Schema Support in Database Schema Inspection***<br /><br />
+***(D) Multi-Schema Support in Database Schema Inspection***<br />
 
 **At a Glance**
 

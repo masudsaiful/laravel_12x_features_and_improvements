@@ -153,7 +153,35 @@ Laravel supports multiple **UUID** versions, primarily, **UUIDv4** and **UUIDv7*
 > **In Laravel 12.x:**
 > **HasUuids** → Now defaults to UUIDv7 instead of UUIDv4.  
 > **HasVersion7Uuids** → Removed (not needed anymore).  
-> New **HasVersion4Uuids** trait → If you still want UUIDv4, use this instead.  
+> New **HasVersion4Uuids** trait → If you still want UUIDv4, use this instead.
+
+
+**Example Before Laravel 12 (Using UUIDv4 by Default):** 
+```php
+    use Illuminate\Database\Eloquent\Concerns\HasUuids;
+    
+    class User extends Model {
+        use HasUuids; // Previously, this used UUIDv4
+    }
+```
+
+**Example in Laravel 12 (Now Uses UUIDv7 by Default):** 
+```php
+    use Illuminate\Database\Eloquent\Concerns\HasUuids;
+    
+    class User extends Model {
+        use HasUuids; // Now this generates UUIDv7
+    }
+```
+
+**If We Want to Keep Using UUIDv4 in Laravel 12:** 
+```php
+    use Illuminate\Database\Eloquent\Concerns\HasVersion4Uuids as HasUuids;
+    
+    class User extends Model {
+        use HasUuids; // This keeps using UUIDv4 instead of UUIDv7
+    }
+```
 
 
 

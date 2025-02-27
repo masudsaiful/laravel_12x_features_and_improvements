@@ -134,7 +134,13 @@ The following are the high impact changes that need while upgrading from version
 
 **ii) Medium Impact Changes:**
 
-This affects applications that rely on UUIDs for model IDs. If system depends on UUIDv4 and want to use UUIDv7, must update the application code relates with UUIDv7.
+Laravel says, **Likelihood Of Impact: Medium** about 'Models and UUIDv7'. Before that let's firstly try to undestand what is this actually!  
+A **UUID** (Universally Unique Identifier) is a 128-bit identifier used to uniquely identify records in a database. Unlike auto-incrementing IDs, UUIDs:     
+🔹 Are globally unique (no duplicates even across different databases).  
+🔹 Do not expose record count (for security).  
+🔹 Work well in distributed systems (no risk of ID conflicts).  
+
+
 
 
 

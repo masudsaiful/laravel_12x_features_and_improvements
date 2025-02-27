@@ -232,6 +232,15 @@ Previously, in **Laravel 11** and earlier, calling `$request->mergeIfMissing()` 
         'user.last_name' => 'Otwell', // Stored as a string key, not nested.
 ]`
 
+**Problem:** Laravel treated `user.last_name` as a string key, not as a nested array.
+
+**We had to manually structure the array** to avoid this issue:
+```php
+    $request->mergeIfMissing([
+        'user' => ['last_name' => 'Otwell'],
+    ]);
+```
+
 
 
 

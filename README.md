@@ -203,7 +203,6 @@ The following are the minimal impact changes that need while upgrading from vers
 
 
 **SVGs Image Validation**
-
 Before Laravel 12 image validation rule allowed SVG images by default. Now from **Laravel 12** to allow SVGs when using the image rule, we must explicitly allow them:  
 ```php
     use Illuminate\Validation\Rules\File;

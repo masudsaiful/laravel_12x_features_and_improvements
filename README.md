@@ -46,7 +46,7 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
 
-> **WorkOS AuthKit:**
+> ***WorkOS AuthKit:*** 
 > WorkOS AuthKit is a new authentication solution introduced in Laravel 12's starter kits (React, Vue, Livewire). It provides:      
 > ✔ Enterprise authentication out of the box.    
 > ✔ Social login (Google, Microsoft, etc.).    
@@ -55,7 +55,7 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 > It’s integrated into Laravel’s starter kits, making it easier to implement authentication without additional setup.  
 
     
-> **Laravel Socialite:**
+> **Laravel Socialite:*** 
 > Socialite is Laravel’s existing package for OAuth-based authentication. It allows authentication via:  
 > ✔ Google  
 > ✔ Facebook  
@@ -66,10 +66,10 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 
 
 ###### ii) When to Use Which? 
-> **WorkOS AuthKit:**
+> **WorkOS AuthKit:*** 
 > Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.            
 
-> **Laravel Socialite:**
+> **Laravel Socialite:*** 
 > Use Laravel Socialite if you need OAuth-based login (Google, Facebook, GitHub, etc.) but don't require SSO or passkeys.         
 
 Laravel **Socialite** is great for basic social logins, while **WorkOS AuthKit** is a more advanced authentication solution with enterprise features. Laravel 12 does not replace Socialite but provides WorkOS AuthKit as an alternative for applications needing SSO, passkeys, or enterprise authentication.  
@@ -119,13 +119,13 @@ When upgrading to a new version, it's crucial to consider potential breaking cha
 
 The following are the high impact changes that need while upgrading from version 11.x:
 
-> **Updating Dependencies:**
+> **Updating Dependencies:*** 
 > We should update the following dependencies in the application's composer.json file while upgrading from version 11.x:      
 > * laravel/framework to ^12.0.    
 > * phpunit/phpunit to ^11.0.    
 > * pestphp/pest to ^3.0.
 
-> **Updating Installer While Using CLI Tool:**
+> **Updating Installer While Using CLI Tool:*** 
 > If we want to create new Laravel application using Laravel installer CLI tool we should update the installer installation to be compatible with Laravel 12.x and the new Laravel starter kits while upgrading from version 11.x:      
 > * updated installer via composer > `composer global update laravel/installer`    
 > * updated installer via php.new (run as administrator) > `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))`   
@@ -133,7 +133,7 @@ The following are the high impact changes that need while upgrading from version
 
 
 ###### ii) Medium Impact Changes:
-**Models and UUIDv7:**
+**Models and UUIDv7:*** 
 
 Laravel says, **Likelihood Of Impact: Medium** about **Models and UUIDv7**. Before that let's firstly try to undestand what is this actually!
 
@@ -146,7 +146,7 @@ Laravel supports multiple **UUID** versions, primarily, **UUIDv4** and **UUIDv7*
 🔹 **UUIDv7** → Ordered, time-based values (better for database indexing).  
 
 
-**Laravel 12.x Upgrade: What Changed with UUIDs?**    
+**Laravel 12.x Upgrade: What Changed with UUIDs?***     
 > **Before Laravel 12.x (Laravel 11.x and Earlier):** 
 > **HasUuids** → Used UUIDv4 (random UUIDs).  
 > **HasVersion7Uuids** → Used UUIDv7 (ordered UUIDs).  
@@ -188,7 +188,7 @@ Laravel supports multiple **UUID** versions, primarily, **UUIDv4** and **UUIDv7*
 
 The following are the minimal impact changes that need while upgrading from version 11.x:
 
-**(A) Updating Dependencies**
+**(A) Updating Dependencies*** 
 
 > **Carbon 3**
 > All **Laravel 12** applications now require **Carbon 3.x**. Upgrading to **Carbon 3.x** in **Laravel 12** is straightforward. **Laravel 12** requires **Carbon 3.x** by default, so if you're using **Laravel 12**, it should already be installed. However, if you need to upgrade from **Carbon 2.x**, follow these steps.:<br /><br /> 
@@ -203,7 +203,7 @@ The following are the minimal impact changes that need while upgrading from vers
 > You should see something like this: versions: `*3.x.x*`<br /><br />
 
 
-**(B) SVGs Image Validation**    
+**(B) SVGs Image Validation***     
 Before **Laravel 12** image validation rule allowed **SVG** images by default. Now from **Laravel 12** to allow SVGs when using the image rule, we must explicitly allow them:  
 ```php
     use Illuminate\Validation\Rules\File;
@@ -214,7 +214,7 @@ Before **Laravel 12** image validation rule allowed **SVG** images by default. N
     'photo' => ['required', File::image(allowSvg: true)],
 ```
 
-**(C) Nested Array Request Merging**    
+**(C) Nested Array Request Merging***     
 Previously, in **Laravel 11** and earlier, calling `$request->mergeIfMissing()` with dot notation keys would not properly merge into a nested array. Instead, it would store the key as a string, rather than treating it as a nested array key.
 
 **Example: Laravel 11 (Old Behavior):**

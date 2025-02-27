@@ -287,7 +287,7 @@ In **Laravel 12**, database schema inspection methods `(Schema::getTables(), Sch
 **Expected Output in Laravel 12:**
 `['main.migrations', 'main.users', 'blog.posts']`
 
-Tables from all schemas are included by default!  
+Tables from all schemas are included by default!<br /><br />
 
 *`Schema::getTables()` and `Schema::getTableListing()` At a Glance in Laravel 12:*
 
@@ -297,5 +297,14 @@ Now, you can **filter by schema** using the schema argument.
 Fetch tables from the main schema only 
 ```php
     $tables = Schema::getTables(schema: 'main');
+```
+Output: `['main.migrations', 'main.users', 'blog.posts']`
+
+
+**Example 2: Fetching Tables from Multiple Schemas:**  
+**Fetch tables** from **main** and **blog** schemas.    
+
+```php
+    $tables = Schema::getTables(schema: ['main', 'blog']);
 ```
 Output: `['main.migrations', 'main.users', 'blog.posts']`

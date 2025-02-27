@@ -291,9 +291,10 @@ Tables from all schemas are included by default!
 
 *`Schema::getTables()` and `Schema::getTableListing()` At a Glance in Laravel 12:*
 
-**Fetching Tables from a Specific Schema:**  
-Now, you can **filter by schema** using the schema argument.  
-Example: Fetch tables from the main schema only  
+**Example 1: Fetching Tables from a Specific Schema:**  
+Now, you can **filter by schema** using the schema argument.    
+
+Example: Fetch tables from the main schema only 
 ```php
     $tables = Schema::getTables(schema: 'main');
 ```

@@ -132,7 +132,8 @@ The following are the high impact changes that need while upgrading from version
 > * updated installer using [Laravel Herd's](https://herd.laravel.com/) > update Herd installation to the latest release.
 
 
-###### ii) Medium Impact Changes:  
+###### ii) Medium Impact Changes:
+**Models and UUIDv7:**
 
 Laravel says, **Likelihood Of Impact: Medium** about **Models and UUIDv7**. Before that let's firstly try to undestand what is this actually!
 
@@ -203,7 +204,7 @@ The following are the minimal impact changes that need while upgrading from vers
 
 
 **SVGs Image Validation**    
-Before Laravel 12 image validation rule allowed SVG images by default. Now from **Laravel 12** to allow SVGs when using the image rule, we must explicitly allow them:  
+Before **Laravel 12** image validation rule allowed **SVG** images by default. Now from **Laravel 12** to allow SVGs when using the image rule, we must explicitly allow them:  
 ```php
     use Illuminate\Validation\Rules\File;
     
@@ -212,6 +213,26 @@ Before Laravel 12 image validation rule allowed SVG images by default. Now from 
     // Or...
     'photo' => ['required', File::image(allowSvg: true)],
 ```
+
+**Nested Array Request Merging**    
+Previously, in **Laravel 11** and earlier, calling `$request->mergeIfMissing()` with dot notation keys would not properly merge into a nested array. Instead, it would store the key as a string, rather than treating it as a nested array key.
+
+    **Example: Laravel 11 (Old Behavior):**
+    ```php
+        use Illuminate\Validation\Rules\File;
+        
+        'photo' => 'required|image:allow_svg'
+        
+        // Or...
+        'photo' => ['required', File::image(allowSvg: true)],
+    ```
+
+    **Expected Output in Laravel 11:**
+    ```php
+        [
+            'user.last_name' => 'Otwell', // Stored as a string key, not nested.
+        ]
+    ```
 
 
 

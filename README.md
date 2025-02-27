@@ -3,7 +3,7 @@ As Laravel follows [Semantic Versioning](https://semver.org/) and it has it's ma
 #### A) Caution! When Using Named Arguments in Laravel:
 Laravel's backward compatibility guidelines do not cover **named arguments**. This means the Laravel team may rename function arguments in future updates to improve the codebase. Therefore, when using named arguments in Laravel, you should be cautious and understand that parameter names may change in future versions.
 
-**Example:**  
+###### Example: 
 
 Laravel may change function argument names in future releases.  
 In Laravel 12, the `response()->json()` function may look like this:
@@ -41,7 +41,7 @@ Laravel included [WorkOS AuthKit](https://authkit.com/) for user authentication 
 
 Many, including myself, may find it surprising that why has **'WorkOS AuthKit'** been added in Laravel 12.x despite the presence of **'Socialite'**? Well, Let's take a look at the key differences between these two, which will probably help us understand the reasons why Laravel included this feature in 12.x version. 
 
-**i) WorkOS AuthKit vs Laravel Socialite: Key Differences:**
+##### i) WorkOS AuthKit vs Laravel Socialite: Key Differences:
 
 **Laravel Socialite** and **WorkOS AuthKit** both provide authentication solutions, but they are designed for different use cases. Here's a breakdown of what they are and how they differ:
 
@@ -65,7 +65,7 @@ Many, including myself, may find it surprising that why has **'WorkOS AuthKit'**
 > It’s developer-friendly but requires manual setup, including registering OAuth credentials, handling callbacks, and storing user data.  
 
 
-**ii) When to Use Which?**  
+##### ii) When to Use Which? 
 > **WorkOS AuthKit:**
 > Use WorkOS AuthKit if you're building an app with Laravel 12 starter kits (React, Vue, Livewire) and need enterprise authentication, SSO, or passkeys.            
 

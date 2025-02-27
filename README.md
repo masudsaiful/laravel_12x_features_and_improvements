@@ -307,4 +307,13 @@ Output: `['main.migrations', 'main.users']`
 ```php
     $tables = Schema::getTables(schema: ['main', 'blog']);
 ```
+Output: `['main.migrations', 'main.users', 'blog.posts']`<br /><br />
+
+
+**Example 3: Schema::getTableListing() Now Returns Schema-Qualified Table Names:**  
+**Fetch tables** from **main** and **blog** schemas.    
+
+```php
+    $tables = Schema::getTables(schema: ['main', 'blog']);
+```
 Output: `['main.migrations', 'main.users', 'blog.posts']`

@@ -290,7 +290,7 @@ In **Laravel 12**, database schema inspection methods `(Schema::getTables(), Sch
 
 Tables from all schemas are included by default!
 
-**New Multi-Schema Support At a Glance:**
+**`Schema::getTables()` and `Schema::getTableListing()` At a Glance:**
 <hr />
   
 

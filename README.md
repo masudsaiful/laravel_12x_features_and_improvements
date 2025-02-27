@@ -217,22 +217,22 @@ Before **Laravel 12** image validation rule allowed **SVG** images by default. N
 **Nested Array Request Merging**    
 Previously, in **Laravel 11** and earlier, calling `$request->mergeIfMissing()` with dot notation keys would not properly merge into a nested array. Instead, it would store the key as a string, rather than treating it as a nested array key.
 
-    **Example: Laravel 11 (Old Behavior):**
-    ```php
-        use Illuminate\Validation\Rules\File;
-        
-        'photo' => 'required|image:allow_svg'
-        
-        // Or...
-        'photo' => ['required', File::image(allowSvg: true)],
-    ```
+**Example: Laravel 11 (Old Behavior):**
+```php
+    use Illuminate\Validation\Rules\File;
+    
+    'photo' => 'required|image:allow_svg'
+    
+    // Or...
+    'photo' => ['required', File::image(allowSvg: true)],
+```
 
-    **Expected Output in Laravel 11:**
-    ```php
-        [
-            'user.last_name' => 'Otwell', // Stored as a string key, not nested.
-        ]
-    ```
+**Expected Output in Laravel 11:**
+```php
+    [
+        'user.last_name' => 'Otwell', // Stored as a string key, not nested.
+    ]
+```
 
 
 

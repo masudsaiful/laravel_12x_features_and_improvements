@@ -258,7 +258,7 @@ Now, Laravel 12 correctly merges dot notation keys into a nested array.
 ]`
 
 ***(D) Multi-Schema Support in Database Schema Inspection***<br /><br />
-In Laravel 12, database schema inspection methods `(Schema::getTables(), Schema::getViews(), Schema::getTypes(), and Schema::getTableListing())` now return results from all database schemas by default, instead of only showing tables from the default schema.
+In **Laravel 12**, database schema inspection methods `(Schema::getTables(), Schema::getViews(), Schema::getTypes(), and Schema::getTableListing())` now return results from all database schemas by default, instead of only showing tables from the default schema.
 
 > **Laravel 11 & Earlier (Old Behavior):**     
 > * `Schema::getTables()` & similar methods only fetched tables from the default schema.    
@@ -269,5 +269,23 @@ In Laravel 12, database schema inspection methods `(Schema::getTables(), Schema:
 ```php
     $tables = Schema::getTables(); // Only returns tables from the default schema.
 ```
+**Expected Output in Laravel 11:**
+`['migrations', 'users', 'posts']`
+
+
+> **Laravel 12 (New Behavior):** 
+> Now, `Schema::getTables()`, `Schema::getViews()`, and `Schema::getTypes()` automatically return tables from all schemas.:      
+> * laravel/framework to ^12.0.    
+> * phpunit/phpunit to ^11.0.    
+> * pestphp/pest to ^3.0.
+
+**Example in Laravel 12:**
+```php
+    $tables = Schema::getTables();
+```
+**Expected Output in Laravel 12:**
+`['main.migrations', 'main.users', 'blog.posts']`
+
+Tables from all schemas are included by default!
   
 

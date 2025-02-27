@@ -194,7 +194,8 @@ The following are the minimal impact changes that need while upgrading from vers
 >          
 > **1. Check Your Current Carbon Version :** Run the following command in your Laravel project to see the installed version:   
 > `composer show nesbot/carbon`         
-> If you see Carbon 2.x, you'll need to upgrade.      
+> If you see Carbon 2.x, you'll need to upgrade.
+>      
 > **2. Upgrade to Carbon 3.x :** Run the following command:      
 > `composer require nesbot/carbon:^3.0 --with-all-dependencies`           
 > This updates Carbon to version 3.x 

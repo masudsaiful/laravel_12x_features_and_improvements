@@ -188,7 +188,7 @@ Laravel supports multiple **UUID** versions, primarily, **UUIDv4** and **UUIDv7*
 
 The following are the minimal impact changes that need while upgrading from version 11.x:
 
-**Updating Dependencies**
+**(A) Updating Dependencies**
 
 > **Carbon 3**
 > All **Laravel 12** applications now require **Carbon 3.x**. Upgrading to **Carbon 3.x** in **Laravel 12** is straightforward. **Laravel 12** requires **Carbon 3.x** by default, so if you're using **Laravel 12**, it should already be installed. However, if you need to upgrade from **Carbon 2.x**, follow these steps.:<br /><br /> 
@@ -203,7 +203,7 @@ The following are the minimal impact changes that need while upgrading from vers
 > You should see something like this: versions: `*3.x.x*`<br /><br />
 
 
-**SVGs Image Validation**    
+**(B) SVGs Image Validation**    
 Before **Laravel 12** image validation rule allowed **SVG** images by default. Now from **Laravel 12** to allow SVGs when using the image rule, we must explicitly allow them:  
 ```php
     use Illuminate\Validation\Rules\File;
@@ -214,7 +214,7 @@ Before **Laravel 12** image validation rule allowed **SVG** images by default. N
     'photo' => ['required', File::image(allowSvg: true)],
 ```
 
-**Nested Array Request Merging**    
+**(C) Nested Array Request Merging**    
 Previously, in **Laravel 11** and earlier, calling `$request->mergeIfMissing()` with dot notation keys would not properly merge into a nested array. Instead, it would store the key as a string, rather than treating it as a nested array key.
 
 **Example: Laravel 11 (Old Behavior):**

@@ -275,9 +275,6 @@ In **Laravel 12**, database schema inspection methods `(Schema::getTables(), Sch
 
 > **Laravel 12 (New Behavior):** 
 > Now, `Schema::getTables()`, `Schema::getViews()`, and `Schema::getTypes()` automatically return tables from all schemas.:      
-> * laravel/framework to ^12.0.    
-> * phpunit/phpunit to ^11.0.    
-> * pestphp/pest to ^3.0.
 
 **Example in Laravel 12:**
 ```php

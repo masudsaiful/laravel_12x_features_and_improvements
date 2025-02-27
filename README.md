@@ -147,14 +147,14 @@ Laravel supports multiple **UUID** versions, primarily, **UUIDv4** and **UUIDv7*
 ###### Laravel 12.x Upgrade: What Changed with UUIDs?
 **Before Laravel 12.x (Laravel 11.x and Earlier)**:
 
-**HasUuids** → Used **UUIDv4** (random UUIDs).
-**HasVersion7Uuids** → Used **UUIDv7** (ordered UUIDs).
+**HasUuids** → Used **UUIDv4** (random UUIDs).  
+**HasVersion7Uuids** → Used **UUIDv7** (ordered UUIDs).  
 
 **In Laravel 12.x**:
 
-**HasUuids** → Now defaults to **UUIDv7** instead of UUIDv4.
-**HasVersion7Uuids** → Removed (not needed anymore).
-New **HasVersion4Uuids** trait → If you still want **UUIDv4**, use this instead.
+**HasUuids** → Now defaults to **UUIDv7** instead of UUIDv4.  
+**HasVersion7Uuids** → Removed (not needed anymore).  
+New **HasVersion4Uuids** trait → If you still want **UUIDv4**, use this instead.  
 
 
 

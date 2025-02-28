@@ -289,7 +289,7 @@ In **Laravel 12**, database schema inspection methods `(Schema::getTables(), Sch
 
 Tables from all schemas are included by default!<br /><br />
 
-*`Schema::getTables()` and `Schema::getTableListing()` At a Glance in Laravel 12:*
+*`Schema::getTables()` and `Schema::getTableListing()` in Laravel 12:*
 
 **Example 1: Fetching Tables from a Specific Schema:**  
 Now, you can **filter by schema** using the schema argument.    
@@ -310,8 +310,8 @@ Output: `['main.migrations', 'main.users']`
 Output: `['main.migrations', 'main.users', 'blog.posts']`<br /><br />
 
 **Example 3: Schema::getTableListing() Now Returns Schema-Qualified Table Names:**    
-> * Old behavior (Laravel 11) → Only returned table names, without schema prefixes..    
-> * New behavior (Laravel 12) → Returns schema-qualified table names..    
+> * Old behavior (Laravel 11) → Only returned table names, without schema prefixes.     
+> * New behavior (Laravel 12) → Returns schema-qualified table names.  
 
 Laravel 12 Default Behavior
 ```php
@@ -319,3 +319,13 @@ Laravel 12 Default Behavior
 ```
 Output: `['main.migrations', 'main.users', 'blog.posts']`  
 Now includes schema names (main, blog).
+
+
+**Example 4: Disabling Schema Qualification:**    
+> * If we want the old behavior (table names only, no schema prefix), need to pass `schemaQualified: false`.      
+
+```php
+    Schema::getTableListing(schema: 'main', schemaQualified: false);
+```
+Output: `['migrations', 'users']`  
+Returns only table names, without schema prefixes.

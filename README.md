@@ -298,7 +298,7 @@ Fetch tables from the main schema only
 ```php
     $tables = Schema::getTables(schema: 'main');
 ```
-Output: `['main.migrations', 'main.users']`
+Output: `['main.migrations', 'main.users']`<br /><br />  
 
 
 **Example 2: Fetching Tables from Multiple Schemas:**  
@@ -318,7 +318,7 @@ Laravel 12 Default Behavior
     Schema::getTableListing();
 ```
 Output: `['main.migrations', 'main.users', 'blog.posts']`  
-Now includes schema names (main, blog).
+Now includes schema names (main, blog).<br /><br />
 
 
 **Example 4: Disabling Schema Qualification:**    
@@ -328,4 +328,15 @@ Now includes schema names (main, blog).
     Schema::getTableListing(schema: 'main', schemaQualified: false);
 ```
 Output: `['migrations', 'users']`  
-Returns only table names, without schema prefixes.  
+Returns only table names, without schema prefixes.<br /><br />
+
+**Example 5: Laravel CLI Commands Now Show Multi-Schema Results:**    
+> **Updated Commands:**     
+> * `php artisan db:table`    
+> * `php artisan db:show`  
+
+> **Before (Laravel 11):**     
+> * These commands only returned tables from the default schema.   
+
+> **After (Laravel 12):**     
+> * Now, they return tables from all schemas, making Laravel's behavior consistent across all database systems (`PostgreSQL`, `MySQL`, `MariaDB`, `SQL Server`, `SQLite`).

@@ -328,4 +328,4 @@ Now includes schema names (main, blog).
     Schema::getTableListing(schema: 'main', schemaQualified: false);
 ```
 Output: `['migrations', 'users']`  
-Returns only table names, without schema prefixes.
+Returns only table names, without schema prefixes.  
